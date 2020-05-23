@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Premium"
+        android:layout_width="299dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Enter the premium Amount per year"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/pre_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pre_num"
+        android:layout_width="278dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Number of Premiums to be Paid"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Premium" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="102dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Policy Term"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Sum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_num" />
+
+    <EditText
+        android:id="@+id/Sum"
+        android:layout_width="347dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="378dp"
+        android:ems="10"
+        android:hint="Final Payment after Completion of Policy"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="255dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="281dp"
+        android:onClick="click"
+        android:text="Calculate Interest Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sum" />
+
+    <EditText
+        android:id="@+id/interest"
+        android:layout_width="364dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Dont write anything in the box"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/Premium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
